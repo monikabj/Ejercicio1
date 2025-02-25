@@ -1,0 +1,8 @@
+<h2>Lista de Bebidas</h2>
+<ul *ngIf="bebidas.length > 0">
+  <li *ngFor="let bebida of bebidas">
+    <img [src]="bebida.strDrinkThumb" alt="{{ bebida.strDrink }}" width="100">
+    {{ bebida.strDrink }}
+  </li>
+</ul>
+<p *ngIf="bebidas.length === 0">No hay bebidas disponibles.</p>

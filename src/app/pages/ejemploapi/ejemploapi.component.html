@@ -1,0 +1,11 @@
+<input type="text" [(ngModel)]="nombreBusqueda" placeholder="Buscar cóctel" />
+<button (click)="buscar()">Buscar</button>
+
+<ul *ngIf="cocteles.length > 0">
+  <li *ngFor="let coctel of cocteles">
+    <h3>{{ coctel.strDrink }}</h3>
+    <img [src]="coctel.strDrinkThumb" width="100" />
+  </li>
+</ul>
+
+<p *ngIf="cocteles.length === 0 && nombreBusqueda">No se encontraron cócteles.</p>

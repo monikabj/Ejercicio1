@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>Menu de bebidas </h1>
+      <div>
+        <h4>Listado de productos</h4>
+        <table>
+          @for(producto of productos; track producto.id){
+            <tr>
+              <td>{{ producto.id }}</td>
+              <td>{{ producto.descripcion }}</td>
+              <td>{{ producto.precio }}</td>
+    
+            </tr>
+    
+          }
+        </table>
+      </div>
+    
+      <p></p>
+    
+    
+    </div>
