@@ -19,7 +19,6 @@ export class PostsService {
     const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${categoria}`;
     return this.http.get(url);
   }
-  
 }
 
 
